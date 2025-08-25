@@ -1,0 +1,24 @@
+<!--logica del dom---> 
+<ul id="lista"></ul>
+
+<script>
+    const lista = document.getElementById("lista")
+    const frutas = ["manzana","kiwi","fresa","mango"]
+
+    // Crear un <li> por cada fruta
+        frutas.forEach(fruta => {
+            const li = document.createElement("li")
+            li.textContent = fruta 
+            lista.appendChild(li)
+        })
+
+
+    // Lógica condicional
+
+    if(frutas.includes("fresa")) {
+
+        alert("¡La lista contiene fresa!")
+
+    }
+
+</script>

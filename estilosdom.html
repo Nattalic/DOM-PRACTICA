@@ -1,0 +1,50 @@
+<!--Modificar estilos inline--->
+
+<p id="p1"> Texto con estilo </p>
+
+<script>
+
+    const p1 = document.getElementById("p1")
+    p1.style.backgroundColor = "pink"
+    p1.style.fontSize = "50px"
+
+</script>
+
+
+
+<!--Cambiar clases--->
+<style>
+    .resaltado {
+        color: blanchedalmond;
+        font-weight: bold;
+    }
+</style>
+
+<p id="p2"> TEXTOSOQDWJD </p>
+
+<script>
+
+    const p2 = document.getElementById("p2")
+    p2.classList.add("resaltado") // Añadir clase
+
+</script>
+
+
+
+
+<!--Insertar CSS desde JS---> 
+<p id="p3">Texto dinámico</p>
+
+<script>
+
+    const estilo = document.createElement("style") //?????????????????????
+    estilo.textContent = 
+    `.dinamico {
+    color: green;
+    font-size: 18px;
+    }`
+
+    document.head.appendChild(estilo) 
+
+    document.getElementById("p3").classList.add("dinamico")
+</script>

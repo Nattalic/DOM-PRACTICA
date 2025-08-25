@@ -1,0 +1,63 @@
+<!--DOM--->
+
+<!--CRUD de objetos en el DOM: create, read, update, delete--->
+
+<!--crear elementos--->
+<div id="contenedor"></div>
+
+<script>
+
+    const contenedor = document.getElementById("contenedor")
+
+    //crear elementos nuevos
+    const parrafo = document.createElement("p") 
+    parrafo.textContent = "Holaaaaa, soy un nuevo parrafo creado con JS"
+
+    //insertar 
+    contenedor.appendChild(parrafo)
+
+</script>
+
+
+
+<!--leer elementos--->
+<h1 id="titulo">TITULOOO</h1>
+
+<script>
+    const titulo =document.getElementById("titulo")
+    console.log("TITULOOO", titulo.textContent) //???????
+
+</script>
+
+
+
+
+<!--actualizar elementos--->
+<h1 id="titulo2">TITULOOO</h1>
+
+<script>
+
+    const titulo2 =document.getElementById("titulo2") 
+    titulo2.textContent = "Nuevo titulo dinamico"
+    titulo.style.color = "blue"
+
+</script>
+
+
+
+
+
+<!--eliminar elementos--->
+<div id="contenedor2">
+
+    <p id="p1">parrafo a eliminar</p>
+
+</div>
+
+<script>
+    const contenedor2 = document.getElementById("contenedor2")
+    const p1 = document.getElementById("p1")
+
+    contenedor2.removeChild(p1) //elimina elementos
+
+</script>
