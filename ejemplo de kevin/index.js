@@ -91,7 +91,7 @@ form.addEventListener('submit', (evento) =>  {
     evento.preventDefault() //evitar que la pagina se recarge 
     console.log("formulario enviado")
     const input1 = inputField.value
-    const input2 = myCheckbox.checked
+    const input2 = myCheckbox.checked 
 
     alert(`Mensaje ingresado: ${input1} Verifico?  ${input2 ? 'Si' : 'No'}`) //form
 
