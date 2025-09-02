@@ -21,8 +21,8 @@ console.log(titlesWithSpan)
 
 
 //obtener desde el html el contenido
-const description = document.querySelector(".description")
-const container = document.getElementById("container")
+const description = document.querySelector(".description") //clase
+const container = document.getElementById("container") //id
 const text = document.querySelector(".text")
 const changeText = document.getElementById("changeText")
 const addElement = document.getElementById("addElement")
@@ -35,7 +35,7 @@ const input2 = document.getElementById("myCheckbox")
 const button = document.getElementById("submitForm")
 
 
-console.dir ({
+console.dir ({ //nos permite obtener varios elementos 
     title,
     description,
     content,
