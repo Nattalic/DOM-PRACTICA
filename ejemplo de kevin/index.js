@@ -84,7 +84,7 @@ toggleClass.addEventListener('click', () => {
     content.classList.toggle('highlight')
     container.style = `background-color :  ${darkMode ? 'pink' : 'white'}`
     //!true = false      !false = true
-    darkMode = !darkMode
+    darkMode = !darkMode    
 })
 
 form.addEventListener('submit', (evento) =>  {
